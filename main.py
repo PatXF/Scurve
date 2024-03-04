@@ -70,7 +70,7 @@ if st.button("Convert"):
         df_dict['Discharge'] = Tunit
         df = pd.DataFrame(df_dict)
         st.success("Converted!")
-        st.balloons()
-        st.area_chart(df)
         maxi = max(Tunit)
         st.info(f"Peak discharge for this unit hydrograph is {maxi}")
+        st.balloons()
+        st.area_chart(df)
