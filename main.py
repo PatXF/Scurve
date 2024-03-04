@@ -72,4 +72,5 @@ if st.button("Convert"):
         st.success("Converted!")
         st.balloons()
         st.area_chart(df)
-
+        maxi = max(Tunit)
+        st.info(f"Peak discharge for this unit hydrograph is {maxi}")
